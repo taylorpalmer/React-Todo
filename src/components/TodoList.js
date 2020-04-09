@@ -4,6 +4,7 @@ import React from "react";
 import Task from "./Task";
 
 const TodoList = (props) => {
+  console.log(props);
   return (
     <div className="todo-list">
       {props.todo.map((task) => (

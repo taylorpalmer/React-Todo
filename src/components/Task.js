@@ -1,6 +1,7 @@
 import React from "react";
 
 const Task = (props) => {
+  console.log("Task props: ", props);
   return (
     <div
       className={`task${props.item.completed ? "completed" : ""}`}

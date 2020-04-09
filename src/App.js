@@ -1,8 +1,15 @@
 import React from "react";
-import ReactDOM from "react-dom";
 
 import TodoList from "./components/TodoList";
 import TodoForm from "./components/TodoForm";
+
+const todo = [
+  {
+    name: "clean garage",
+    id: 1,
+    completed: false,
+  },
+];
 
 class App extends React.Component {
   // you will need a place to store your state in this component.
@@ -21,6 +28,7 @@ class App extends React.Component {
     const newTask = {
       name: task,
       id: Date.now(),
+      completed: false,
     };
 
     this.setState({

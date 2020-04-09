@@ -10,6 +10,7 @@ class TodoForm extends React.Component {
 
   handleChanges = (e) => {
     this.setState({ [e.target.name]: e.target.value });
+    console.log(this.state.task);
   };
 
   submitTask = (e) => {
