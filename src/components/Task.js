@@ -4,7 +4,7 @@ const Task = (props) => {
   console.log("Task props: ", props);
   return (
     <div
-      className={`task${props.item.completed ? "completed" : ""}`}
+      className={`task${props.task.completed ? "completed" : ""}`}
       onClick={() => props.toggleTask(props.task.id)}
     >
       <p>{props.task.name}</p>
